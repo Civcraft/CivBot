@@ -3,4 +3,4 @@
 use Mix.Config
 
 config :slack, api_token: ""
-config :civbot, check_forum: 60_000
+config :civbot, check_forum_delay: 60_000

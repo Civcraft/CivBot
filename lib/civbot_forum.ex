@@ -2,7 +2,7 @@ defmodule Civbot.Forum do
   use GenServer
 
   @site "https://forum.civcraft.co/"
-  @delay Application.get_env(:civbot, :check_forum)
+  @delay Application.get_env(:civbot, :check_forum_delay)
 
   def start_link do
     GenServer.start_link(__MODULE__,[],[])

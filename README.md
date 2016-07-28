@@ -1,24 +1,28 @@
 # Civbot
 
-**TODO: Add description**
+**For automated relay tasks and other cool stuff.**
 
-## Installation
+## Installation & Usage
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+  1. Ensure [Elixir](http://elixir-lang.org/install.html) is installed.
 
-  1. Add `civbot` to your list of dependencies in `mix.exs`:
-
-    ```elixir
-    def deps do
-      [{:civbot, "~> 0.1.0"}]
-    end
-    ```
-
-  2. Ensure `civbot` is started before your application:
+  2. Edit `config/config.exs` to set slack bot key:
 
     ```elixir
-    def application do
-      [applications: [:civbot]]
-    end
+    config :slack, api_token: "<key-here>"
     ```
+  3. Compile the application:
+    ```
+    **WINDOWS(cmd):**
+    set "MIX_ENV=prod" && mix compile
+    **UNIX(bash)**
+    MIX_ENV=prod mix compile
+    ```
+  4. Run the application:
 
+    ```
+    **WINDOWS(cmd):**
+    set "MIX_ENV=prod" && iex --werl --no-halt -S mix
+    **UNIX(bash)**
+    MIX_ENV=prod iex --no-halt -S mix
+    ```
