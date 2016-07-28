@@ -12,6 +12,7 @@
     config :slack, api_token: "<key-here>"
     ```
   3. Compile the application:
+
     ```
     **WINDOWS(cmd):**
     set "MIX_ENV=prod" && mix compile
